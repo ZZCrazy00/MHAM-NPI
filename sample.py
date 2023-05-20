@@ -42,5 +42,5 @@ def get_data(data_name):
     print(pd_data)
 
 
-data_name = 'RPI488'
+data_name = 'NPInter2'
 get_data(data_name)
