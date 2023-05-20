@@ -1,7 +1,7 @@
-# MHANN-NPI
+# MHAM-NPI
 
 Predicting ncRNA-protein interactions based on
-Multi-Head Attention neural networks
+multi-head attention mechanism
 
 ## Main requirements
 
