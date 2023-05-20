@@ -46,7 +46,7 @@ test = test.drop(columns=['label'])
 test_tensor_data = TensorDataset(torch.from_numpy(np.array(test)), torch.from_numpy(np.array(test_label)))
 test_loader = DataLoader(test_tensor_data, batch_size=batch_size)
 
-model = MHANN(feat_sizes, embedding_size, dnn_feature_columns).cuda()
+model = MHAM(feat_sizes, embedding_size, dnn_feature_columns).cuda()
 loss_func = nn.BCELoss(reduction='mean').cuda()
 optimizer = torch.optim.Adam(model.parameters(), lr=5e-4, weight_decay=1e-6)
 

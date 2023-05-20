@@ -1,4 +1,4 @@
-name: MHANN-NPI
+name: MHAM-NPI
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main

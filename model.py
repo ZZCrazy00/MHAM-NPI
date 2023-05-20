@@ -68,10 +68,10 @@ class InteractingLayer(nn.Module):
         return result
 
 
-class MHANN(nn.Module):
+class MHAM(nn.Module):
     def __init__(self, feat_size, embedding_size, dnn_feature_columns,
                  att_layer_num=3, att_res=True, dnn_hidden_units=(256, 128)):
-        super(MHANN, self).__init__()
+        super(MHAM, self).__init__()
         self.sparse_feature_columns = list(filter(lambda x: x[1] == 'sparse', dnn_feature_columns))
         self.embedding_dic = nn.ModuleDict({
             feat[0]: nn.Embedding(feat_size[feat[0]], embedding_size, sparse=False) for feat in
